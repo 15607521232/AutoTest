@@ -1,0 +1,19 @@
+2019-07-21 20:04:06.825  INFO 9552 --- [main] com.course.Application                   : Starting Application on LiGuang_PC with PID 9552 (E:\ideaworkspace\muke\AutoTest\Chapter11\target\classes started by liguang in E:\ideaworkspace\muke\AutoTest)
+2019-07-21 20:04:06.829  INFO 9552 --- [main] com.course.Application                   : No active profile set, falling back to default profiles: default
+2019-07-21 20:04:07.103  INFO 9552 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3911c2a7: startup date [Sun Jul 21 20:04:07 CST 2019]; root of context hierarchy
+2019-07-21 20:04:07.709  WARN 9552 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-07-21 20:04:07.970  WARN 9552 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': Initialization of bean failed; nested exception is javax.validation.ValidationException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2019-07-21 20:04:07.974 ERROR 9552 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Bean Validation API is on the classpath but no implementation could be found
+
+Action:
+
+Add an implementation, such as Hibernate Validator, to the classpath
+
